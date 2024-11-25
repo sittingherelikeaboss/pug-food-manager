@@ -25,8 +25,8 @@ export default function Index() {
         <View>
           <Text style={styles.header}>
             {isPugFedForTheDay
-              ? "The pug has been fed all meals for today.\nHave a nice day pug owner!\n"
-              : "Have you fed the pug?\nSelect meal fed to the pug"}
+              ? "The pug has been fed all meals for today. \uD83C\uDF89\nHave a nice day pug owner!\n"
+              : "\uD83D\uDC4B Have you fed the pug?\nSelect mealtime fed to the pug"}
           </Text>
           {isPugFedForTheDay && (
             <Text style={styles.subHeader}>Buttons will reset at midnight</Text>
@@ -75,7 +75,7 @@ export default function Index() {
                 setDinnerTime(moment().format("LTS"));
               }}
             >
-              <Text style={styles.text}>Dinner</Text>
+              <Text style={styles.text}>{"Dinner \uD83C\uDF1A"}</Text>
             </Pressable>
             {isPugFedDinner && (
               <Pressable
